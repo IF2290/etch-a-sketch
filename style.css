@@ -5,6 +5,7 @@ body{
     align-items: center;
     color: white;
     gap: 100px;
+    font-family: "Roboto", sans-serif;
 }
 #container{
     display: flex;
