@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(27, 27, 27);
+    align-items: center;
+    color: white;
+    gap: 100px;
+}
+*{
+    border: 1px solid red;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+}
+.column{
+    background-color: white;
+    width: 20px;
+    height: 20px; 
+}
+.columns{
+    display: flex;
+}
