@@ -47,7 +47,7 @@ for (let i = 0; i < 16; i++){
 
 button.addEventListener("click", (e) => {
     let NumOfSquares = prompt("enter number of rows and columns (eg: 16 means 16x16 grid)");
-    if (Number.isInteger(Number(NumOfSquares)) && NumOfSquares <= 100){
+    if (Number.isInteger(Number(NumOfSquares)) && NumOfSquares <= 100 && NumOfSquares > 0){
         container.replaceChildren();
             for (let i = 0; i < NumOfSquares; i++){
                 let columns = document.createElement("div");
@@ -93,7 +93,7 @@ button.addEventListener("click", (e) => {
         container.appendChild(columns);
         };
     } else if (NumOfSquares > 100){
-        alert("chill bro! the max is 100");
+        alert("chill bro! you can can only write 1-100 here");
     } else {
         alert("Enter an integer only");
     };
