@@ -7,27 +7,39 @@ for (let i = 0; i < 16; i++){
     for (let j = 0; j < 16; j++){
         let column = document.createElement("div");
         column.classList.add("column");
-                    if (randomColor() < 0.2){
-                        column.addEventListener("mouseover", (e) => {
+               column.addEventListener("mouseover", (e) => {
+                if (randomColor() < 0.2){
+                       
+                        column.style.backgroundColor = "white";
                         column.style.backgroundColor = "red";
-                     });   
+   
                     } else if (randomColor() > 0.2 && randomColor() < 0.4){
-                        column.addEventListener("mouseover", (e) => {
+                       
+                        column.style.backgroundColor = "white";
                         column.style.backgroundColor = "blue";
-                        });  
+      
                     } else if (randomColor() > 0.4 && randomColor() < 0.6){
-                        column.addEventListener("mouseover", (e) => {
+                       
+                        column.style.backgroundColor = "white";
                         column.style.backgroundColor = "green";    
-                        });            
+                
                     } else if (randomColor() > 0.6 && randomColor() < 0.8){
-                        column.addEventListener("mouseover", (e) => {
-                        column.style.backgroundColor = "prange";
-                        });           
+                       
+                        column.style.backgroundColor = "white";
+                        column.style.backgroundColor = "orange";
+               
                     } else if (randomColor() > 0.8 && randomColor() < 1){
-                        column.addEventListener("mouseover", (e) => {
-                        column.style.backgroundColor = "grey";  
-                        });           
+
+                        column.style.backgroundColor = "white";
+                        column.style.backgroundColor = "grey";      
+
+                    } else { 
+
+                        column.style.backgroundColor = "white";
+                        column.style.backgroundColor = "pink";  
+
                     };
+               });
         columns.appendChild(column);
     };
     container.appendChild(columns);
@@ -43,27 +55,39 @@ button.addEventListener("click", (e) => {
                 for (let j = 0; j < NumOfSquares; j++){
                     let column = document.createElement("div");
                     column.classList.add("column");
+                        column.addEventListener("mouseover", (e) => {
                     if (randomColor() < 0.2){
-                        column.addEventListener("mouseover", (e) => {
+                       
+                        column.style.backgroundColor = "white";
                         column.style.backgroundColor = "red";
-                     });   
+   
                     } else if (randomColor() > 0.2 && randomColor() < 0.4){
-                        column.addEventListener("mouseover", (e) => {
+                       
+                        column.style.backgroundColor = "white";
                         column.style.backgroundColor = "blue";
-                        });  
+      
                     } else if (randomColor() > 0.4 && randomColor() < 0.6){
-                        column.addEventListener("mouseover", (e) => {
+                       
+                        column.style.backgroundColor = "white";
                         column.style.backgroundColor = "green";    
-                        });            
+                
                     } else if (randomColor() > 0.6 && randomColor() < 0.8){
-                        column.addEventListener("mouseover", (e) => {
-                        column.style.backgroundColor = "prange";
-                        });           
+                       
+                        column.style.backgroundColor = "white";
+                        column.style.backgroundColor = "orange";
+               
                     } else if (randomColor() > 0.8 && randomColor() < 1){
-                        column.addEventListener("mouseover", (e) => {
-                        column.style.backgroundColor = "grey";  
-                        });           
+
+                        column.style.backgroundColor = "white";
+                        column.style.backgroundColor = "grey";      
+
+                    } else { 
+
+                        column.style.backgroundColor = "white";
+                        column.style.backgroundColor = "pink";  
+
                     };
+               });
                     columns.appendChild(column);
                 };
         container.appendChild(columns);
@@ -80,24 +104,19 @@ function randomColor(){
 };
 /*
 if (randomColor() < 0.2){
-     column.addEventListener("mouseover", (e) => {
-        column.style.backgroundColor = "";
-        });   
+    
+        column.style.backgroundColor = "   
     } else if (randomColor() > 0.2 && randomColor() < 0.4){
-         column.addEventListener("mouseover", (e) => {
-            column.style.backgroundColor = "";
-        });  
+        
+            column.style.backgroundColor = "  
     } else if (randomColor() > 0.4 && randomColor() < 0.6){
-            column.addEventListener("mouseover", (e) => {
-                column.style.backgroundColor = "";    
-        });            
+           
+                column.style.backgroundColor = "";              
     } else if (randomColor() > 0.6 && randomColor() < 0.8){
-            column.addEventListener("mouseover", (e) => {
-                column.style.backgroundColor = "";
-        });           
+           
+                column.style.backgroundColor = "           
     } else if (randomColor() > 0.8 && randomColor() < 1){
-            column.addEventListener("mouseover", (e) => {
-                column.style.backgroundColor = "";  
-        });           
+           
+                column.style.backgroundColor = "";           
 };
 */
