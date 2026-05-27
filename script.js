@@ -1,3 +1,4 @@
+//This code is subject to changes
 const container = document.querySelector("#container");
 const button = document.querySelector("button");
 for (let i = 0; i < 16; i++){
