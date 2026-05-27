@@ -92,7 +92,7 @@ button.addEventListener("click", (e) => {
                 };
         container.appendChild(columns);
         };
-    } else if (NumOfSquares > 100){
+    } else if (NumOfSquares > 100 || NumOfSquares <= 0){
         alert("chill bro! you can can only write 1-100 here");
     } else {
         alert("Enter an integer only");
