@@ -43,6 +43,27 @@ button.addEventListener("click", (e) => {
                 for (let j = 0; j < NumOfSquares; j++){
                     let column = document.createElement("div");
                     column.classList.add("column");
+                    if (randomColor() < 0.2){
+                        column.addEventListener("mouseover", (e) => {
+                        column.style.backgroundColor = "red";
+                     });   
+                    } else if (randomColor() > 0.2 && randomColor() < 0.4){
+                        column.addEventListener("mouseover", (e) => {
+                        column.style.backgroundColor = "blue";
+                        });  
+                    } else if (randomColor() > 0.4 && randomColor() < 0.6){
+                        column.addEventListener("mouseover", (e) => {
+                        column.style.backgroundColor = "green";    
+                        });            
+                    } else if (randomColor() > 0.6 && randomColor() < 0.8){
+                        column.addEventListener("mouseover", (e) => {
+                        column.style.backgroundColor = "prange";
+                        });           
+                    } else if (randomColor() > 0.8 && randomColor() < 1){
+                        column.addEventListener("mouseover", (e) => {
+                        column.style.backgroundColor = "grey";  
+                        });           
+                    };
                     columns.appendChild(column);
                 };
         container.appendChild(columns);
