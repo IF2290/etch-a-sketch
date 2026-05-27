@@ -7,9 +7,27 @@ for (let i = 0; i < 16; i++){
     for (let j = 0; j < 16; j++){
         let column = document.createElement("div");
         column.classList.add("column");
-        column.addEventListener("mouseover", (e) => {
-            column.setAttribute("style", "background-color: red;");
-        });
+                    if (randomColor() < 0.2){
+                        column.addEventListener("mouseover", (e) => {
+                        column.style.backgroundColor = "red";
+                     });   
+                    } else if (randomColor() > 0.2 && randomColor() < 0.4){
+                        column.addEventListener("mouseover", (e) => {
+                        column.style.backgroundColor = "blue";
+                        });  
+                    } else if (randomColor() > 0.4 && randomColor() < 0.6){
+                        column.addEventListener("mouseover", (e) => {
+                        column.style.backgroundColor = "green";    
+                        });            
+                    } else if (randomColor() > 0.6 && randomColor() < 0.8){
+                        column.addEventListener("mouseover", (e) => {
+                        column.style.backgroundColor = "prange";
+                        });           
+                    } else if (randomColor() > 0.8 && randomColor() < 1){
+                        column.addEventListener("mouseover", (e) => {
+                        column.style.backgroundColor = "grey";  
+                        });           
+                    };
         columns.appendChild(column);
     };
     container.appendChild(columns);
@@ -25,11 +43,8 @@ button.addEventListener("click", (e) => {
                 for (let j = 0; j < NumOfSquares; j++){
                     let column = document.createElement("div");
                     column.classList.add("column");
-                    column.addEventListener("mouseover", (e) => {
-                    column.setAttribute("style", "background-color: red;");
-                });
-            columns.appendChild(column);
-        };
+                    columns.appendChild(column);
+                };
         container.appendChild(columns);
         };
     } else if (NumOfSquares > 100){
@@ -38,3 +53,30 @@ button.addEventListener("click", (e) => {
         alert("Enter an integer only");
     };
 });
+function randomColor(){
+    let random = Math.random();
+    return random;
+};
+/*
+if (randomColor() < 0.2){
+     column.addEventListener("mouseover", (e) => {
+        column.style.backgroundColor = "";
+        });   
+    } else if (randomColor() > 0.2 && randomColor() < 0.4){
+         column.addEventListener("mouseover", (e) => {
+            column.style.backgroundColor = "";
+        });  
+    } else if (randomColor() > 0.4 && randomColor() < 0.6){
+            column.addEventListener("mouseover", (e) => {
+                column.style.backgroundColor = "";    
+        });            
+    } else if (randomColor() > 0.6 && randomColor() < 0.8){
+            column.addEventListener("mouseover", (e) => {
+                column.style.backgroundColor = "";
+        });           
+    } else if (randomColor() > 0.8 && randomColor() < 1){
+            column.addEventListener("mouseover", (e) => {
+                column.style.backgroundColor = "";  
+        });           
+};
+*/

@@ -26,3 +26,13 @@ body{
     display: flex;
     flex: 1;
 }
+button{
+    background-color: aqua;
+    border: none;
+    border-radius: 15px;
+    height: 40px;
+    width: 210px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
