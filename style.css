@@ -14,8 +14,8 @@ body{
 }
 .column{
     background-color: white;
-    width: 30px;
-    height: 30px; 
+    height: 30px;
+    width: 30px; 
     border: 1px solid black;
 }
 .columns{

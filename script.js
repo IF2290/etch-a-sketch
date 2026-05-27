@@ -1,4 +1,5 @@
 const container = document.querySelector("#container");
+const button = document.querySelector("button");
 for (let i = 0; i < 16; i++){
     let columns = document.createElement("div");
     columns.classList.add("columns");
@@ -12,3 +13,21 @@ for (let i = 0; i < 16; i++){
     };
     container.appendChild(columns);
 };
+
+button.addEventListener("click", (e) => {
+    let NumOfSquares = prompt("enter number of rows and columns (eg: 16 means 16x16 grid)")
+    container.replaceChildren();
+        for (let i = 0; i < NumOfSquares; i++){
+            let columns = document.createElement("div");
+            columns.classList.add("columns");
+            for (let j = 0; j < NumOfSquares; j++){
+                let column = document.createElement("div");
+                column.classList.add("column");
+                column.addEventListener("mouseover", (e) => {
+                column.setAttribute("style", "background-color: red;");
+            });
+        columns.appendChild(column);
+    };
+    container.appendChild(columns);
+    };
+});
