@@ -7,7 +7,7 @@ body{
     background-color: rgb(27, 27, 27);
     align-items: center;
     color: white;
-    gap: 100px;
+    gap: 10px;
     font-family: "Roboto", sans-serif;
 }
 #container{
@@ -35,4 +35,29 @@ button{
     font-size: 15px;
     font-weight: 700;
     cursor: pointer;
+}
+.colors{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.blue, .red, .green, .yellow, .white{
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+}
+.blue{
+    background-color: aqua;
+}
+.red{
+    background-color: red;
+}
+.yellow{
+    background-color: yellow;
+}
+.green{
+    background-color: green;
+}
+.white{
+    background-color: white;
 }
