@@ -118,7 +118,8 @@ button.addEventListener("click", (e) => {
                     let column = document.createElement("div");
                     column.classList.add("column");
                         column.addEventListener("mouseover", (e) => {
-                    if (randomColor() < 0.2){
+                    if(option === ""){
+                     if (randomColor() < 0.2){
                        
                         column.style.backgroundColor = "white";
                         column.style.backgroundColor = "red";
@@ -149,6 +150,21 @@ button.addEventListener("click", (e) => {
                         column.style.backgroundColor = "pink";  
 
                     };
+                }else if(option === "blue"){
+                    column.style.backgroundColor = "white";
+                    column.style.backgroundColor = "aqua";  
+                }else if(option === "red"){
+                    column.style.backgroundColor = "white";
+                    column.style.backgroundColor = "red";  
+                }else if(option === "green"){
+                    column.style.backgroundColor = "white";
+                    column.style.backgroundColor = "green";  
+                }else if(option === "yellow"){
+                    column.style.backgroundColor = "white";
+                    column.style.backgroundColor = "yellow";  
+                }else if(option === "white"){
+                    column.style.backgroundColor = "white";
+                };
                });
                     columns.appendChild(column);
                 };
