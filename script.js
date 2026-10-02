@@ -164,22 +164,3 @@ function randomColor(){
     let random = Math.random();
     return random;
 };
-
-/*
-if (randomColor() < 0.2){
-    
-        column.style.backgroundColor = "   
-    } else if (randomColor() > 0.2 && randomColor() < 0.4){
-        
-            column.style.backgroundColor = "  
-    } else if (randomColor() > 0.4 && randomColor() < 0.6){
-           
-                column.style.backgroundColor = "";              
-    } else if (randomColor() > 0.6 && randomColor() < 0.8){
-           
-                column.style.backgroundColor = "           
-    } else if (randomColor() > 0.8 && randomColor() < 1){
-           
-                column.style.backgroundColor = "";           
-};
-*/
